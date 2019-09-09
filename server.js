@@ -50,7 +50,6 @@ ox.latest(function() {
 //CHANGE CURRENCY
 function changeCurrency(num) {
     var pointNum = parseFloat(num);
-    console.log('change number from ' + pointNum + ' to ' + fx.convert(pointNum));
     return fx.convert(pointNum);
 }
 
