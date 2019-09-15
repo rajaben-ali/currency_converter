@@ -13,8 +13,7 @@ app.set('view engine', 'ejs');
 
 //APP USE
 app.use('/stylesheets', express.static('stylesheets'));
-app.use(bodyParser.urlencoded({ extended: true  }));
-
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
     name: 'session',
     keys: ['dfsfdsfsfds'],
@@ -54,6 +53,5 @@ function changeCurrency(num) {
 }
 
 app.listen(8080);
-
 
 console.log('Server running at http://127.0.0.1:8080');
