@@ -52,6 +52,7 @@ function changeCurrency(num) {
     return fx.convert(pointNum);
 }
 
-app.listen(8080);
+app.listen(process.env.PORT);
+console.log(process.env.PORT);
 
 console.log('Server running at http://127.0.0.1:8080');
